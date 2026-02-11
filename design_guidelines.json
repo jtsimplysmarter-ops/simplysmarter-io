@@ -1,0 +1,149 @@
+{
+  "identity": {
+    "persona": "E1",
+    "role": "Creative Designer",
+    "aesthetic": "Modernist, Minimalist, High-Contrast, Corporate",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Negative Space is Luxury",
+      "Contrast is Key"
+    ]
+  },
+  "design_system": {
+    "colors": {
+      "palette": {
+        "background": "#050505",
+        "surface": "#0A0A0A",
+        "text_primary": "#FFFFFF",
+        "text_secondary": "#A1A1AA",
+        "accent_gold": "#F59E0B",
+        "border": "#27272A"
+      },
+      "rules": [
+        "Background must be deep charcoal/black (#050505 or #0A0A0A).",
+        "Text must be high-contrast white (#FFFFFF) for headings.",
+        "Secondary text should be neutral gray (#A1A1AA).",
+        "Gold/Orange (#F59E0B) is ONLY for specific stacking/BTC icons. Do not use for buttons or backgrounds.",
+        "NO GRADIENTS. Flat colors only."
+      ]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Inter, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "styles": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tighter leading-none uppercase",
+        "h2": "text-3xl md:text-5xl font-semibold tracking-tight uppercase",
+        "h3": "text-xl md:text-2xl font-medium tracking-wide uppercase",
+        "body": "text-base md:text-lg text-neutral-400 leading-relaxed",
+        "label": "text-xs font-mono tracking-[0.2em] uppercase text-neutral-500"
+      }
+    },
+    "spacing": {
+      "scale": [
+        "p-0", "p-1", "p-2", "p-4", "p-6", "p-8", "p-12", "p-16", "p-20", "p-24", "p-32", "p-40"
+      ],
+      "rules": [
+        "Use generous spacing (p-12 to p-32) for section padding.",
+        "Ensure containers with borders have internal padding (p-6 or p-8).",
+        "Use gap-8 to gap-12 for grids."
+      ]
+    },
+    "layout": {
+      "grid_system": "Use CSS Grid with 'grid-cols-1 md:grid-cols-12'. Avoid standard Bootstrap columns.",
+      "alignment": "Left-align text for readability. Center-align only for specific dramatic effect in Hero.",
+      "container": "max-w-screen-2xl mx-auto px-6 md:px-12"
+    },
+    "motion": {
+      "library": "framer-motion",
+      "rules": [
+        "Subtle scroll animations (fade-in, slide-up).",
+        "Staggered entrance for lists.",
+        "No bouncy or springy animations. Keep it smooth and professional (easeOut).",
+        "Duration: 0.6s to 0.8s."
+      ]
+    }
+  },
+  "components": {
+    "Header": {
+      "structure": "Flexbox, justify-between, items-center, py-6 or py-8.",
+      "elements": [
+        {
+          "name": "Logo",
+          "type": "SVG",
+          "description": "White geometric 'S' logo. Create a custom SVG component. It should look like two interlocking shapes or a sharp angular S.",
+          "position": "Top Left"
+        },
+        {
+          "name": "Corporate Title",
+          "text": "SIMPLY SMARTER LTD",
+          "style": "text-lg md:text-xl font-bold tracking-widest uppercase ml-4",
+          "position": "Center-Right of Logo (flex-row with logo)"
+        },
+        {
+          "name": "Contact",
+          "text": "admin@simplysmarter.io",
+          "style": "text-sm text-neutral-400 hover:text-white transition-colors",
+          "position": "Right side (or below title if mobile)"
+        }
+      ],
+      "rules": "No navigation links. Clean and de-cluttered. Transparent background or matching body bg."
+    },
+    "Hero": {
+      "content": "Mission Statement",
+      "style": "Minimalist. Large typography. Centered or Left-aligned.",
+      "animation": "Fade in text."
+    },
+    "Mission_Section": {
+      "title": "Mission",
+      "content": "Define the mission clearly. Use large text.",
+      "layout": "Grid layout. Title on left (col-span-4), Content on right (col-span-8)."
+    },
+    "Vision_Section": {
+      "title": "Vision",
+      "content": "Define the vision. Use large text.",
+      "layout": "Grid layout. Title on left (col-span-4), Content on right (col-span-8)."
+    },
+    "Projects_Section": {
+      "title": "Future Projects",
+      "content": "Coming Soon",
+      "style": "Minimalist placeholder. Maybe a subtle border or a mono-spaced 'LOADING...' indicator.",
+      "layout": "Centered or Grid."
+    },
+    "Footer": {
+      "content": "Copyright © Simply Smarter Ltd. All rights reserved.",
+      "style": "text-xs text-neutral-600 py-12 border-t border-neutral-900",
+      "rules": "No social media links. No director names. No address."
+    }
+  },
+  "assets": {
+    "images": [],
+    "icons": {
+      "library": "lucide-react",
+      "instructions": "Use minimal icons if necessary. Prefer text over icons."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Ensure Tailwind is configured for dark mode by default (or force dark colors).",
+    "2. FONTS: Use 'Inter' from Google Fonts (via import in index.css).",
+    "3. GLOBAL CSS: Set body background to #050505 and text to #FFFFFF.",
+    "4. COMPONENT: Create a 'Logo' component that renders the Geometric 'S' SVG.",
+    "5. PAGE STRUCTURE: Create a single page layout (LandingPage.js).",
+    "6. SECTIONS: Implement Header, Mission, Vision, Projects, Footer as separate components or sections within the page.",
+    "7. ANIMATION: Wrap sections in Framer Motion <motion.div> for scroll reveal.",
+    "8. CONTENT: Use placeholder text for Mission/Vision if not provided, but make it sound corporate and AI-focused (e.g., 'Leveraging artificial intelligence for superior asset security.').",
+    "9. PRIVACY: Do NOT include any fake names, addresses, or social links.",
+    "10. FINAL CHECK: Ensure high contrast (White on Black). No gradients."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use gradients.",
+    "Do not use 'Inter' for headings if possible, but if limited, use Inter with tight tracking.",
+    "Use generous padding (py-24, py-32).",
+    "Ensure all text is legible against the dark background.",
+    "Use 'data-testid' for all interactive elements."
+  ]
+}
