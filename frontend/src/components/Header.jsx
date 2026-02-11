@@ -11,7 +11,7 @@ const Header = () => {
       data-testid="header"
     >
       <div className="max-w-screen-2xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-center">
+        <div className="flex items-center">
           {/* Logo - Using the uploaded image */}
           <div className="flex-shrink-0">
             <img 
@@ -22,8 +22,8 @@ const Header = () => {
             />
           </div>
           
-          {/* Title and Contact - Positioned to the right */}
-          <div className="flex flex-col md:ml-16 lg:ml-24 mt-4 md:mt-0">
+          {/* Title and Contact - Centered in remaining space */}
+          <div className="flex-1 flex flex-col items-center">
             <h1 
               className="text-xl md:text-2xl lg:text-3xl font-bold tracking-[0.2em] uppercase text-white"
               data-testid="company-title"
