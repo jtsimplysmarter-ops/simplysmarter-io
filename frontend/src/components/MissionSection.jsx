@@ -18,7 +18,7 @@ const MissionSection = () => {
               01
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight uppercase mt-4 text-white">
-              Mission
+              Mission Statement
             </h2>
           </motion.div>
           
@@ -31,7 +31,13 @@ const MissionSection = () => {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
           >
             <p className="text-lg md:text-xl text-neutral-300 leading-relaxed" data-testid="mission-text">
-              To simplify the complex landscape of modern wealth by providing intuitive, AI-driven tools that bridge the gap between digital innovation and tangible security. We empower individuals to build their 'stack' with confidence, privacy, and clarity.
+              Our Vision is to build tools connecting people with AI in productivity and life enhancing ways while still keeping alive a sense of fun curiosity and wonder.
+            </p>
+            <p className="text-lg md:text-xl text-neutral-300 leading-relaxed mt-6">
+              We are entering a time of unprecedented change and advancement in Artificial Intelligence. We're on the journey, come join us...
+            </p>
+            <p className="text-xl md:text-2xl text-white font-semibold mt-6 tracking-wide">
+              The Simply Smarter Way!
             </p>
           </motion.div>
         </div>

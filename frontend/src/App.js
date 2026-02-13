@@ -1,9 +1,8 @@
 import React from "react";
-import "@/App.css";
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import MissionSection from "./components/MissionSection";
-import VisionSection from "./components/VisionSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 
@@ -19,7 +18,6 @@ const LandingPage = () => {
       {/* Main Content */}
       <main>
         <MissionSection />
-        <VisionSection />
         <ProjectsSection />
       </main>
       
