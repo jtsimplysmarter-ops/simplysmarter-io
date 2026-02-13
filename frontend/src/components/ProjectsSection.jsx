@@ -15,7 +15,7 @@ const ProjectsSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <span className="text-xs font-mono tracking-[0.2em] uppercase text-neutral-500">
-              03
+              02
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight uppercase mt-4 text-white">
               Future Projects
