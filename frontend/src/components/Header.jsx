@@ -15,7 +15,7 @@ const Header = () => {
           {/* Logo - Using the uploaded image */}
           <div className="flex-shrink-0">
             <img 
-              src="https://customer-assets.emergentagent.com/job_104ed172-efc8-440b-a01b-5f30ef985683/artifacts/inuuejnl_image.png"
+              src="https://customer-assets.emergentagent.com/job_wealth-stack-1/artifacts/bwno6rqo_Simply.Smarter.Logo.jpg"
               alt="Simply Smarter Ltd Logo"
               className="w-28 h-28 md:w-36 md:h-36 object-contain"
               data-testid="header-logo"
